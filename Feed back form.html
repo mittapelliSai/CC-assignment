@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>coffee shop Feedback</title>
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+        <div class="from-container">
+            <style type="text/css">
+                
+             .img_cofe
+             {
+                float: left;
+             }
+             
+             .tag_cen
+             {
+                position: absolute;
+                width: 50%;
+                background-color: burlywood;
+                border-radius: 10px;
+                border-spacing: 30px;
+             }
+             .vid_tap
+             {
+                display: flex;
+                align-items: left;
+                justify-content: left;
+                min-height: 10vh;
+                border-radius: 30px;
+                
+             }
+             .btn_smt
+             {
+                align-items: center;
+                display: flex;
+                justify-content: center;
+                font-size: 18px;
+                font-weight: bold;
+                background: #1e90ff;
+                width: 140px;
+                height: 39px;
+                padding: 20px; 
+                text-align: center;
+                text-decoration: none;
+                text-transform: uppercase;
+                color: #fff;
+                border-radius: 5px;
+                cursor: pointer;
+                box-shadow: 0 0 10px rgba(0, 0, 0,0.1);
+             }
+             
+             .text_area {
+                 background-color: #dddddd;
+                color: #666666;
+                align-items: end;
+                padding: 1em;
+                border-radius: 10px;
+                border: 2px solid transparent;
+                outline: none;
+                font-family: "Heebo", sans-serif;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 1.4;
+                width: 200px;
+                height: 100px;
+                transition: all 0.2s;
+            }
+
+            .textarea:hover {
+                 cursor: pointer;
+                  background-color: #eeeeee;
+                 }
+
+            .textarea:focus {
+            
+                 cursor: text;
+                 color: #333333;
+                 background-color: white;
+                 border-color: #333333;
+            }
+            body
+            {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-height: 100vh;
+                background: linear-gradient(#4671EA,#ac34e7);
+            }
+
+             .bk_pic
+             {
+                border-radius: 25px;
+             }
+
+            </style>
+            <div class="tag_cen"> 
+
+              <img class="img_cofe" src="c:\Users\venum\Downloads\Designer.png" alt="" width="300">
+              <h1  style="color: rgb(59, 92, 192);"><b><i> welome to Neoblue Cafe   </i></b></h1>
+            </div>
+            <br>
+                    <img class="bk_pic" src="c:\Users\venum\Downloads\download.jpeg" alt="" width="800" height="300"> 
+            </br>
+
+            <video class="vid_tap" controls autoplay src="c:\Users\venum\Downloads\V60 pour over coffee - tasty B-roll and transitions.mp4" ></video> 
+            <h2  style="color: rgb(137, 173, 232);"> feedback form for coffee </h2>
+
+            <form id="feedback-form" action="/submit-feedback" method="post">
+                
+                <label  for="name">Customer Name:</label>
+                <input type="text" id="name" name="name" required>
+    
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+    
+                <label for="date">Date of Visit:</label>
+                <input type="date" id="date" name="date">
+
+                <fieldset>
+                    <legend><h2>hospatality:</h2></legend>
+                    <label><input type="radio" name="satisfaction" value="Very Satisfied" required> Very Satisfied</label>
+                    <label><input type="radio" name="satisfaction" value="Satisfied"> good</label>
+                    <label><input type="radio" name="satisfaction" value="Neutral"> not bad</label>
+                    <label><input type="radio" name="satisfaction" value="Unsatisfied"> Unsatisfied</label>
+                    <label><input type="radio" name="satisfaction" value="Very Unsatisfied"> Very Unsatisfied</label>
+                </fieldset>
+    
+
+                <fieldset>
+                    <legend><h2>ambiance amd infrastructure:</h2></legend>
+                    <label><input type="radio" name="satisfaction" value="Very Satisfied" required> Very Satisfied</label>
+                    <label><input type="radio" name="satisfaction" value="Satisfied"> good</label>
+                    <label><input type="radio" name="satisfaction" value="Neutral"> not bad</label>
+                    <label><input type="radio" name="satisfaction" value="Unsatisfied"> Unsatisfied</label>
+                    <label><input type="radio" name="satisfaction" value="Very Unsatisfied"> Very Unsatisfied</label>
+                </fieldset>
+                
+
+                <fieldset>
+                    <legend><h2>service:</h2></legend>
+                    <label><input type="radio" name="satisfaction" value="Very Satisfied" required> Very Satisfied</label>
+                    <label><input type="radio" name="satisfaction" value="Satisfied"> good</label>
+                    <label><input type="radio" name="satisfaction" value="Neutral"> not bad</label>
+                    <label><input type="radio" name="satisfaction" value="Unsatisfied"> Unsatisfied</label>
+                    <label><input type="radio" name="satisfaction" value="Very Unsatisfied"> Very Unsatisfied</label>
+                </fieldset>
+
+
+                <fieldset>
+                    <legend><h2>Overall Satisfaction:<h2></legend>
+                    <label><input type="radio" name="satisfaction" value="Very Satisfied" required> Very Satisfied</label>
+                    <label><input type="radio" name="satisfaction" value="Satisfied"> Satisfied</label>
+                    <label><input type="radio" name="satisfaction" value="Neutral"> Neutral</label>
+                    <label><input type="radio" name="satisfaction" value="Unsatisfied"> Unsatisfied</label>
+                    <label><input type="radio" name="satisfaction" value="Very Unsatisfied"> Very Unsatisfied</label>
+                </fieldset>
+    
+                <br>
+                 <label for="favorite-drink">Favorite Drink:</label>
+                 <select id="favorite-drink" name="favorite-drink">
+                    <option value="Coffee">Coffee</option>
+                    <option value="Tea">Tea</option>
+                    <option value="Smoothie">Smoothie</option>
+                    <option value="Pastry">Pastry</option>
+                    <option value="Other">Other</option>
+                 </select>
+                </br>
+
+                <label><input type="checkbox" name="recommend" value="Yes"> Would you recommend and refer our coffee shop to a friend?</label>
+
+                <div class="wrapper">
+                    <br>
+                        <label for="liked-most">What did you like the most about our BLue coffee cafe?</label>
+                        <textarea class="text_area" id="liked-most" name="liked-most" rows="4"></textarea>
+                    </br>
+                    <br>
+                        <label for="improvements">Any suggestions for improvement?</label>
+                        <textarea class="text_area" id="improvements" name="improvements" rows="4"></textarea>
+                    </br>
+                </div>
+
+                 <br>
+                <!-- Submit Button -->
+                <button type="submit" class="btn_smt">Submit Feedback</button>
+                </br>
+            </form>
+        </div>
+    
+    </body>
+</html>
+    
